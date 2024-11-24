@@ -44,6 +44,7 @@ function New() {
                                 height: "100%",
                                 display: "flex",
                                 flexDirection: "column",
+                                borderRadius: "11px" 
                             }}
                         >
                             {/* Header Section */}
@@ -54,6 +55,9 @@ function New() {
                                     justifyContent: "space-between",
                                     alignItems: "center",
                                     borderBottom: "1px solid lightgray",
+                                    bgcolor: "#0383C7",
+                                    color: "white",
+                                    borderRadius: "11px" 
                                 }}
                             >
                                 <Typography variant="h6">Section-2</Typography>
@@ -128,24 +132,25 @@ function New() {
                                     <br />
                                     <strong>Note:</strong> Please don't change the package name.
                                 </Typography>
-                                <TextField
+                                {/* <TextField
                                     fullWidth
                                     label="sample test case"
                                     variant="outlined"
                                     sx={{ mt: 2 }}
-                                />
+                                /> */}
                             </Box>
                         </Paper>
                     </Grid>
 
                     {/* Right Panel */}
-                    <Grid item xs={12} md={6} lg={6} style={{ height: "100%" }}>
+                    <Grid item xs={12} md={6} lg={6} style={{ height: "100%", }}>
                         <Paper
                             variant="outlined"
                             style={{
                                 height: "100%",
                                 display: "flex",
                                 flexDirection: "column",
+                                borderRadius: "11px" 
                             }}
                         >
                             {/* Header for Code Editor */}
@@ -156,6 +161,10 @@ function New() {
                                     justifyContent: "space-between",
                                     alignItems: "center",
                                     borderBottom: "1px solid lightgray",
+                                    bgcolor: "#0383C7",
+                                    color: "white",
+                                    borderRadius: "11px" 
+
                                 }}
                             >
                                 <Typography variant="h6">Code Editor</Typography>
