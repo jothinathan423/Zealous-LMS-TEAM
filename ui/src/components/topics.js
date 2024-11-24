@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, LinearProgress, Card, CardContent } from '@mui/material';
+import { Box, Typography, LinearProgress, Card, CardContent, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const courses = [
   { name: 'HTML', progress: 70 },
@@ -10,12 +11,15 @@ const courses = [
   { name: 'TypeScript', progress: 60 },
 ];
 
+
 const Topics = () => {
+  const nav = useNavigate();
   return (
     <Box sx={{ padding: '16px', flex: 1, display: 'flex', flexDirection: 'column' }}>
       <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#0c83c8' }}>
-        Assigned Task
+        Assigned Task       <Button variant="contained" onClick={() => nav("/compilepage")}>Compiler Page</Button>
       </Typography>
+
       <Box 
         sx={{
           display: 'grid',
@@ -38,6 +42,7 @@ const Topics = () => {
               </Typography>
             </CardContent>
           </Card>
+          
         ))}
       </Box>
     </Box>
