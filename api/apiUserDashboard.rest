@@ -3,10 +3,10 @@ POST http://localhost:5000/users/addUser
 Content-Type: application/json
 
 {
-    "username": "dharun",
-    "email": "dharun@gmail.com",
+    "username": "dharsani",
+    "email": "dharsani@gmail.com",
     "password": "123",
-    "role": "admin",
+    "role": "user",
     "status": "active",
     "mcqTestsAssigned": ["6703e5624039f028e0552adb", "6704baf25edd518ff861102c"],
     "codingTestsAssigned": ["6703bccac801c34498e5649a", "6704b8680fe7d132407cef49"]
@@ -41,7 +41,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzBiN
 
 ### Fetching problems with respect to codingTests
 GET http://localhost:5000/userDashboardApi/getProblemsByCodingTestsId/6703bccac801c34498e5649a
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzBiNDA4NjA1OWU0MGQzOTQ2Nzg2YTMiLCJ1c2VybmFtZSI6IlZpamF5MTIzNDUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjg5ODI5MjAsImV4cCI6MTcyOTAxODkyMH0.e0NDuEKuCp-Db5Bl2dOonGi2gDgif9twryDpkBlrWPQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQyN2ZlMGM4MTAzMWQ1YWJlMDQ5MzUiLCJ1c2VybmFtZSI6ImpvdGhpbmF0aGFuIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyNDExMzgxLCJleHAiOjE3MzI0NDczODF9.89aInpbOk5-luI4DV0FtVOPrVC-t6bZeZPyjZ8mB8vs
 
 ### Fetching testcases with respect to problems
 GET http://localhost:5000/userDashboardApi/getTestcasesByProblemId/6704b62e4c9f4ebc5af72dc9
